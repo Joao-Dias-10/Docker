@@ -1,6 +1,6 @@
 # Docker - Uma Introdução Rápida
 
-![Docker Logo](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png)
+![Docker Logo](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png](https://cdn-icons-png.flaticon.com/512/5969/5969059.png)
 
 ## O que é o Docker?
 
@@ -27,11 +27,3 @@ Este repositório contém exemplos práticos e tutoriais para ajudá-lo a dar os
 3. [Criação de Imagens](docs/building-images.md): Aprenda como criar suas próprias imagens Docker personalizadas para seus aplicativos.
 
 4. [Orquestração com Docker Compose](docs/docker-compose.md): Descubra como gerenciar aplicativos complexos com múltiplos contêineres usando o Docker Compose.
-
-## Contribuindo
-
-Sinta-se à vontade para contribuir com este repositório! Se você tiver sugestões de melhorias, correções ou novos tutoriais, fique à vontade para abrir um Pull Request.
-
-## Licença
-
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
