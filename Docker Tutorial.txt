@@ -1,0 +1,8 @@
+- Baixa o Docker:
+	- https://docs.docker.com/desktop/install/windows-install/
+
+- Instalar a extensão que deseja para o projeto exemplo:
+	- PowerShell ->  docker run postgres-> (Atribui senha de ascesso ao prostgres do container criado) docker run -d -e 			  POSTGRES_PASSWORD=password postgres 
+
+- Comandos:
+	- docker ps ( Lista os contâines que estão sendo usados )
