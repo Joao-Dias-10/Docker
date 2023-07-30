@@ -2,8 +2,11 @@
 	- https://docs.docker.com/desktop/install/windows-install/
 
 - Instalar a extensão que deseja para o projeto exemplo:
-	- PowerShell ->  docker run postgres
-	-(Atribui senha de ascesso ao prostgres do container criado) -> docker run -d -e POSTGRES_PASSWORD=password postgres 
+	- PowerShell ⬇️
+		- docker run postgres ou docker pull postgres (versão mais recente e não executa direto em um container...)
+
+	- Atribui senha de acesso ao prostgres do container criado ⬇️
+		-docker run -d -e POSTGRES_PASSWORD=password postgres 
 
 - Instalar a extensão que desejae especifica a Tag ('Versão'):
 	-docker run -d -e POSTGRES_PASSWORD=password postgres:bullseye
