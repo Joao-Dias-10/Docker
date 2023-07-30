@@ -12,6 +12,9 @@
 	- Lista os contâines que estão sendo usados ⬇️
 		- docker ps
 
+	- Lista os contâines Up (Usando) ou Existed ('Parado') ⬇️
+		- docker ps -a 
+
 	- Lista images existentes ⬇️
 		- docker images 
 
@@ -19,5 +22,15 @@
 		- docker run -d -e POSTGRES_PASSWORD=password --name bullseye_container postgres:bullseye
 
 	- Remover um Docker containers ⬇️
-		- 
+		- docker rm id_do_container (Remove container Existed/Desliga container Up)
+		- docker rm id_do_container1  id_do_container2 (Remove containers Existed/Desliga containers Up)
+		- docker rm -f id_do_container (Desliga o Up e remove diretamente)
+
+	- Remover um Docker images ⬇️
+		- docker rmi id_da_image (Se não tiver em uso)
+		- docker rmi -f id_da_image (Força remover)
+		- OU
+		- Remove o container que esta usando a img -> docker rmi id_da_image -> OU ex: docker rmi postgres:TAG
+
+
 		
