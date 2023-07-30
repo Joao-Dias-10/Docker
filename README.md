@@ -1,6 +1,6 @@
 # Docker - Uma Introdução Rápida
 
-![Docker Logo](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png](https://cdn-icons-png.flaticon.com/512/5969/5969059.png)
+![Docker Logo](https://cdn-icons-png.flaticon.com/512/5969/5969059.png)
 
 ## O que é o Docker?
 
