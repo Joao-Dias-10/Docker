@@ -1,6 +1,6 @@
 # Docker - Uma Introdução Rápida
 
-<img src="https://cdn-icons-png.flaticon.com/512/5969/5969059.png" alt="Docker Logo" width="200" height="200">
+<img src="https://cdn-icons-png.flaticon.com/512/5969/5969059.png" alt="Docker Logo" width="60" height="60">
 
 ## O que é o Docker?
 
