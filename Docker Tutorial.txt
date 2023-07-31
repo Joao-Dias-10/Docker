@@ -75,7 +75,7 @@
 		- docker load < caminho
 
 	- Vizualizar estatísticas do containers ⬇️
-		- docker stats
+		- docker stats (Memória etc..)
 		- E mais buscas aqui docs.docker.com/engine/reference/commandline/stats/
 
 
