@@ -3,6 +3,7 @@
 
 - Instalar a extensão que deseja para o projeto exemplo:
 	- PowerShell ⬇️
+		- Ver qual quer baixar no docker hub
 		- docker run postgres 
 		- OU
 		- docker pull postgres (versão mais recente e não executa direto em um container...) 
@@ -14,9 +15,12 @@
 - Instalar a extensão que desejae especifica a Tag ('Versão'):
 	-docker run -d -e POSTGRES_PASSWORD=password postgres:bullseye
 
-- Comandos:
+- Comandos: https:
+	- Link docs: //docs.docker.com/engine/reference/commandline/exec/
+
 	- Lista os contâines que estão sendo usados ⬇️
 		- docker ps
+		- docker ps -s (Lists tamamho dos containers)
 
 	- Lista os contâines Up (Usando) ou Existed ('Parado') ⬇️
 		- docker ps -a 
@@ -24,13 +28,15 @@
 	- Lista images existentes ⬇️
 		- docker images 
 
-	- Executar contâiner existente com um nome personalizado ⬇️
+	- Executar contâiner existente com um nome personalizado | Renomear ⬇️
 		- docker run -d -e POSTGRES_PASSWORD=password --name bullseye_container postgres:bullseye
+		- docker rename id_container NEW_NAME
 
 	- Remover um Docker containers ⬇️
 		- docker rm id_do_container (Remove container Existed/Desliga container Up)
 		- docker rm id_do_container1  id_do_container2 (Remove containers Existed/Desliga containers Up)
 		- docker rm -f id_do_container (Desliga o Up e remove diretamente)
+		- docker rm $(docker ps --filter status=existed -q) [Filtra containers com status existed para apagar]
 
 	- Remover um Docker images ⬇️
 		- docker rmi id_da_image (Se não tiver em uso)
@@ -52,6 +58,25 @@
 		- docker logs -f --until=1s id_container ( Filtra qual período quer observar. )
 		- docker logs -f --since=1s id_container ( Filtra qual período quer observar. )
 		- docker logs --tail 10 id_container (Limit 10)
-		- Mais no site...		 
+		- docker logs -size id_container (Tamanho em disco)
+		- Mais no site //docs.docker.com/engine/reference/commandline/exec/	
+
+	- Proucurar 'images não baixadas' pelo terminal ⬇️
+		- Ex: docker search postgres
+
+	- Informações gerais ⬇️
+		- docker info
+
+	- Salvando image docker em um 'zip' ⬇️
+		- docker save redis:latest | gzip > D:\ myredis.tar.gz 
+		(Salva image da frennte com o nome endicado no caminho informado)
+
+	- Importar image pro docker de um arquivo comprimido ⬇️
+		- docker load < caminho
+
+	- Vizualizar estatísticas do containers ⬇️
+		- docker stats
+		- E mais buscas aqui docs.docker.com/engine/reference/commandline/stats/
+
 
 		
