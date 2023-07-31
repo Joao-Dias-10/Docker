@@ -42,7 +42,16 @@
 		- (Pusando) docker stop id_container (Startando) docker start id_container
 		- (Reiniciando) docker restart id_container
 
-	- Executar comandos dentro de um containers
+	- Executar comandos dentro de um containers ⬇️
 		- docker exec -it id_container sh ('Tradução:' Exec container iterativo no terminal shell)
+
+	- Ver logs gerados pelo containers  ( Serviços utilizando  o mesmo. ) ⬇️
+		- docker logs -f id_container
+		- docker logs -f --details id_container ( Detalhes. )
+		- docker logs -f --t id_container ( Hora em que log foi criado. )
+		- docker logs -f --until=1s id_container ( Filtra qual período quer observar. )
+		- docker logs -f --since=1s id_container ( Filtra qual período quer observar. )
+		- docker logs --tail 10 id_container (Limit 10)
+		- Mais no site...		 
 
 		
