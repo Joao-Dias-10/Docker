@@ -5,7 +5,8 @@
 	- PowerShell ⬇️
 		- docker run postgres 
 		- OU
-		- docker pull postgres (versão mais recente e não executa direto em um container...) -> E cria container com fo mesmo com o nome ex: docker run  --name mi_ubuntu ubuntu
+		- docker pull postgres (versão mais recente e não executa direto em um container...) 
+			- E cria container com fo mesmo com o nome ex: docker run  --name mi_ubuntu ubuntu
 
 	- Atribui senha de acesso ao prostgres do container criado ⬇️
 		-docker run -d -e POSTGRES_PASSWORD=password postgres 
