@@ -6,7 +6,7 @@
 		- docker run postgres 
 		- OU
 		- docker pull postgres (versão mais recente e não executa direto em um container...) 
-			- E cria container com fo mesmo com o nome ex: docker run  --name mi_ubuntu ubuntu
+			- E cria container com da img com o nome ex: docker run  --name mi_ubuntu ubuntu
 
 	- Atribui senha de acesso ao prostgres do container criado ⬇️
 		-docker run -d -e POSTGRES_PASSWORD=password postgres 
@@ -37,6 +37,12 @@
 		- docker rmi -f id_da_image (Força remover)
 		- OU
 		- Remove o container que esta usando a img -> docker rmi id_da_image -> OU ex: docker rmi postgres:TAG
+		
+	- Pausando e reiniciando containers ⬇️
+		- (Pusando) docker stop id_container (Startando) docker start id_container
+		- (Reiniciando) docker restart id_container
 
+	- Executar comandos dentro de um containers
+		- docker exec -it id_container sh ('Tradução:' Exec container iterativo no terminal shell)
 
 		
