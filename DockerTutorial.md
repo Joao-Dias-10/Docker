@@ -11,7 +11,7 @@
 
 - Baixe a imagem desejada no [Docker Hub](https://hub.docker.com/):
 
-  ```sh
+```sh
   docker pull postgres      # Baixa a última versão do Postgres
 ````
 
